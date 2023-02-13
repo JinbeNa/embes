@@ -1,17 +1,17 @@
 const textConfig = {
-  text1: "Em bé cảu anh ơi !!!",
+  text1: "Em bé của anh ơi !!!",
   text2: "Chắc em bé đang giận anh, tại sao hqua a không nhắn tin cho em, không nghe em gọi điện đúng không nào 😥😥😥",
   text3: "Em giận anh nhiều lắm phải không ạ ?",
-  text4: "Nếu em không trả lời mà thoát ra tức là không hề giận anh đó nha 😋😊",
+  text4: "Nếu em không trả lời mà thoát ra tức là không hề giận anh đó nha 😋😋",
   text5: "Em rất giận và ghét anh, muốn oánh anh",
   text6: "Khummm, em iu anh nhìu lắm",
-  text7: "",
-  text8: "Gửi cho tớ <3",
-  text9: "Vì cậu đẹp try và dthuong vlll:>>",
-  text10: "Tớ biết mà ^^ Yêu cậux 1000.000",
+  text7: "Biết là em vẫn giận anh rất nhiều nhưng mà em bé có muốn chúc anh cái gì khum ạ 🥰😘🥰",
+  text8: "Gửi cho anh thui nào ❤❤❤ ( nhớ chụp lại bằng điện thoại nhaaaa)",
+  text9: "",
+  text10: "Cảm ơn em bé nhiều ạaaaaa ^^ Yêu iem x 1000.000",
   text11:
-    "Tối nay tớ qua đón cậu đi chơi nhaa :v Còn giờ thì chờ gì nữa mà ko inbox cho tớ đi nàooo",
-  text12: "Okii lunn <3",
+    "Tối nay anh qua đón em đi chơi nhaa :v Còn giờ thì chờ gì nữa mà ko inbox cho anh xin lỗi đi nàooo. Cho anh xin lỗi em bé nhiều ạ, muốn làm cho e 1 cái bất ngờ nho nhỏ mà chả đuợc lộng lẫy 😥😥 \n Chỉ muốn nói với em là anh yêu em nhiều lắm ạ, cùng nhau chúng ta có thêm nhiều mùa Valentine bên nhau em nha 😘 Iu em nhìu lắm ạ ❤",
+  text12: "Gét gô ❤❤❤",
 };
 
 $(document).ready(function () {
@@ -35,7 +35,7 @@ $(document).ready(function () {
     Swal.fire({
       title: textConfig.text1,
       text: textConfig.text2,
-      imageUrl: "img/cuteCat.jpg",
+      imageUrl: "img/IMG_20230121_232853.jpg",
       imageWidth: 300,
       imageHeight: 300,
       background: '#fff url("img/iput-bg.jpg")',
@@ -86,7 +86,7 @@ $(document).ready(function () {
   });
 
   // generate text in input
-  function textGenerate() {
+  /*function textGenerate() {
     var n = "";
     var text = " " + textConfig.text9;
     var a = Array.from(text);
@@ -103,7 +103,7 @@ $(document).ready(function () {
       }
     }
     $("#txtReason").val(n);
-  }
+  }*/
 
   // show popup
   $("#yes").click(function () {
@@ -114,7 +114,7 @@ $(document).ready(function () {
       html: true,
       width: 900,
       padding: "3em",
-      html: "<input type='text' class='form-control' id='txtReason'  placeholder='Whyyy'>",
+      html: "<input type='text' class='text_index' id='txtReason'  placeholder='Viết ngàn lừi iu thương nàooo'>",
       background: '#fff url("img/iput-bg.jpg")',
       backdrop: `
                     rgba(0,0,123,0.4)
@@ -142,15 +142,6 @@ $(document).ready(function () {
           },
         });
       }
-    });
-
-    $("#txtReason").focus(function () {
-      var handleWriteText = setInterval(function () {
-        textGenerate();
-      }, 10);
-      $("#txtReason").blur(function () {
-        clearInterval(handleWriteText);
-      });
     });
   });
 });
